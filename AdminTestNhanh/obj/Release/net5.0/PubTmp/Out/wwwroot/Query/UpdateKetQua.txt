@@ -1,0 +1,3 @@
+﻿Update SoLanIn
+set ketqua = '{0}'
+where yeucauchitiet_id = '{1}'
