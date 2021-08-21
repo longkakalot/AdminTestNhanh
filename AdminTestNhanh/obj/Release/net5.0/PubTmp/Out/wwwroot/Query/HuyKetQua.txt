@@ -1,5 +1,5 @@
-﻿Update SoLanIn
-set ketqua = NULL, TGKetQua = NULL
-, TGLayMau = NULL, LayMau = NULL, NguoiKetQua = NULL, TGIn = NULL, DaIn = NULL
-, CodeXN = NULL
+﻿Delete SoLanIn
+--set ketqua = NULL, TGKetQua = NULL
+--, TGLayMau = NULL, LayMau = NULL, NguoiKetQua = NULL, TGIn = NULL, DaIn = NULL
+--, CodeXN = NULL
 where yeucauchitiet_id = '{0}'
