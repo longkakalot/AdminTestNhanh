@@ -84,33 +84,37 @@
             </td>
             <td>
                 @if (item.GhiChu == "null" || item.GhiChu is null)
-                    {
-                <span></span>
-                    }
-                    else if (item.GhiChu.Contains("2"))
-                    {
-                <span>Cổng số 2</span>
-                    }
-                    else if (item.GhiChu == "3")
-                    {
-                <span>Cổng số 3</span>
-                    }
-                    else if (item.GhiChu == "4")
-                    {
-                <span>Cổng số 4</span>
-                    }
-                    else if (item.GhiChu == "5")
-                    {
-                <span>Cổng số 5</span>
-                    }
-                    else if (item.GhiChu.ToLower() == "ck")
-                    {
-                <span>Hợp đồng công ty</span>
-                    }
-                    else
-                    {
-                <span></span>
-                    }
+                {
+                    <span></span>
+                }
+                else if (item.GhiChu.Contains("2"))
+                {
+                    <span>Cổng số 2</span>
+                }
+                else if (item.GhiChu.Contains("3"))
+                {
+                    <span>Cổng số 3</span>
+                }
+                else if (item.GhiChu.Contains("4"))
+                {
+                    <span>Cổng số 4</span>
+                }
+                else if (item.GhiChu.Contains("5"))
+                {
+                    <span>Cổng số 5</span>
+                }
+                else if (item.GhiChu.ToLower().Contains("ck"))
+                {
+                    <span>Hợp đồng công ty</span>
+                }
+                else if (item.GhiChu.ToLower().Contains("nn"))
+                {
+                    <span>Nhân viên</span>
+                }
+                else
+                {
+                    <span></span>
+                }
             </td>
             <td>
                 <span title="Hủy kết quả" class="btn btn-danger" onclick="HuyKetQua(@item.YeuCauChiTiet_Id, '@item.KetQua')">

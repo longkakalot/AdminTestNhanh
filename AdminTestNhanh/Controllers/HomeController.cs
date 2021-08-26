@@ -46,6 +46,7 @@ namespace AdminTestNhanh.Controllers
                 {
                     var result = resultAwait
                     .Where(m => m.GhiChu is null || m.GhiChu.ToLower().Contains("nn")
+                    || m.GhiChu.ToLower().Contains("nv")
                     || m.GhiChu == "3" || m.GhiChu == "4" || m.GhiChu == "5")
                     .ToList();                    
 
@@ -106,7 +107,9 @@ namespace AdminTestNhanh.Controllers
                 if (tenCongTy == "0" && congSo2 == "0") //ds không có hợp đồng, ko có số 2
                 {
                     var result = resultAwait
-                    .Where(m => m.GhiChu is null || m.GhiChu.ToLower().Contains("nn") || m.GhiChu == "3" || m.GhiChu == "4" || m.GhiChu == "5")
+                    .Where(m => m.GhiChu is null || m.GhiChu.ToLower().Contains("nn")
+                    || m.GhiChu.ToLower().Contains("nv")
+                    || m.GhiChu == "3" || m.GhiChu == "4" || m.GhiChu == "5")
                     .ToList();
 
                     return PartialView("_GetListDaLayMauChuaKq", result);
@@ -194,7 +197,9 @@ namespace AdminTestNhanh.Controllers
                 if (tenCongTy == "0" && congSo2 == "0") //ds không có hợp đồng, ko có số 2
                 {
                     var result = resultAwait
-                    .Where(m => m.GhiChu is null || m.GhiChu.ToLower().Contains("nn") || m.GhiChu == "3" || m.GhiChu == "4" || m.GhiChu == "5")
+                    .Where(m => m.GhiChu is null || m.GhiChu.ToLower().Contains("nn")
+                    || m.GhiChu.ToLower().Contains("nv")
+                    || m.GhiChu == "3" || m.GhiChu == "4" || m.GhiChu == "5")
                     .ToList();
 
                     return PartialView("_GetListDaLayMauCoKq", result);
