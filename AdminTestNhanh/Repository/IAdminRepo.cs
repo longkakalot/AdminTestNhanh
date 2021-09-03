@@ -14,6 +14,7 @@ namespace AdminTestNhanh.Repository
         Task<IList<LayMauTestNhanh>> GetListDaKetQua(string tuNgay, string denNgay, string query);
         Task<int> UpdateKetQua(int id, bool ketQua, string query);
         Task<int> HuyKetQua(int id, string query);
+        Task<IList<KetQua>> GetListKetQuaReport(string tuNgay, string denNgay, string query);
 
     }
 }

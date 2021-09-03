@@ -134,5 +134,23 @@ namespace AdminTestNhanh.Repository
                 return 0;
             }
         }
+
+        public async Task<IList<KetQua>> GetListKetQuaReport(string tuNgay, string denNgay, string query)
+        {
+            try
+            {
+                string text = File.ReadAllText(query);
+                var sql = String.Format(text, tuNgay, denNgay);
+
+                var resultAwait = await _dapper.GetAll<KetQua>(sql, null, CommandType.Text);
+                var result = resultAwait.ToList();
+                return result;
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("GetListDaKetQua AdminRepo" + ex.Message);
+                return null;
+            }
+        }
     }
 }

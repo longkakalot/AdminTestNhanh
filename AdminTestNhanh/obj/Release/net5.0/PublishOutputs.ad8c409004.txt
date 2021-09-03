@@ -48,6 +48,7 @@ G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Rel
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\GetListChuaLayMau.txt
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\GetListDaKetQua.txt
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\GetListDaLayMau.txt
+G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\GetListKetQuaReport.txt
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\HuyKetQua.txt
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\wwwroot\Query\UpdateKetQua.txt
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json

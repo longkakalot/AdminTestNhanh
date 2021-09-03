@@ -130,4 +130,5 @@ G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Deb
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\Razor\Views\Home\_GetListChiDinhChuaLayMau.cshtml.g.cs
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\Razor\Views\Home\_GetListDaLayMauChuaKq.cshtml.g.cs
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\Razor\Views\Home\_GetListDaLayMauCoKq.cshtml.g.cs
-G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\AdminTestNhanh.csproj.AssemblyReference.cache
+G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\Razor\Views\BaoCao\Index.cshtml.g.cs
+G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Debug\net5.0\Razor\Views\BaoCao\_GetListKetQuaReport.cshtml.g.cs

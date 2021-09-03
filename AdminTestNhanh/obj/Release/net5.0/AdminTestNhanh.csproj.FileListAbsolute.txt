@@ -131,3 +131,5 @@ G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Rel
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\ref\AdminTestNhanh.dll
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\AdminTestNhanh.pdb
 G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\AdminTestNhanh.genruntimeconfig.cache
+G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\Razor\Views\BaoCao\Index.cshtml.g.cs
+G:\SourceCodeWebApp\XNTestNhanhCovid\Admin\AdminTestNhanh\AdminTestNhanh\obj\Release\net5.0\Razor\Views\BaoCao\_GetListKetQuaReport.cshtml.g.cs

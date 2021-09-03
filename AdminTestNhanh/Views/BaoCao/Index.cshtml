@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="card">
+    <div class="card-header bg-info" style="padding-bottom: 0px; padding-top: 5px">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <h5 class="card-title text-white">
+                    Báo cáo những ca test nhanh dương tính
+                </h5>
+            </div>
+            
+        </div>
+    </div>   
+    
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="form-group">
+                    <div class="form-inline">
+                        <span>Từ ngày: </span>
+                        <input type="date" id="dtTuNgay" class="form-control ml-2" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="form-group">
+                    <div class="form-inline">
+                        <span>Đến ngày: </span>
+                        <input type="date" id="dtDenNgay" class="form-control ml-2" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+                        <input type="button" id="btnLayBaoCao" class="btn btn-primary" value="Lấy báo cáo" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div id="divDanhSachKetQua"></div>
+    </div>
+
+
+</div>
+
+
+
+
+@section Scripts{
+    <script>
+        function GetListKetQuaReport() {
+                var tuNgay = $("#dtTuNgay").val();
+                var denNgay = $("#dtDenNgay").val();
+                $.ajax({
+                    type: "GET",
+                    url: "/BaoCao/GetListKetQuaReport",
+                    //data: JSON.stringify(objArr),
+                    data: { 'tuNgay': tuNgay, 'denNgay': denNgay },
+                    //contentType: "application/json; charset=utf-8",
+                    dataType: "text",
+                    success: function (responses) {
+                        if (responses === 0 || responses === "0") {
+                            swal.fire("Không lấy được thông tin");
+                        } else {
+                            $("#divDanhSachKetQua").html(responses);
+                        }
+                    },
+                    failure: function (response) {
+                        alert("failure: GetListKetQuaReport" + response.responseText);
+                    },
+                    error: function (response) {
+                        alert("error: GetListKetQuaReport" + response.responseText);
+                    }
+                });
+            }
+
+            
+            $(document).ready(function () {
+                $("#btnLayBaoCao").click(function () {
+                    GetListKetQuaReport();
+                });
+            });
+    </script>
+}

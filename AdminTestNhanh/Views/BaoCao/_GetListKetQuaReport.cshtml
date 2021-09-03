@@ -1,0 +1,57 @@
+﻿@model IEnumerable<KetQua>
+@{
+    var stt = 1;
+}
+
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        @*<div class="float-right">
+                <button id="btnXemDanhSachChuaLayMau" class="btn btn-primary">Xem danh sách</button>
+            </div>*@
+
+        <table id="tblDanhSachKetQuaReport" class="table display table-striped table-bordered" style="width:100%; font-size: 13px; color: black">
+            <thead>
+                <tr class="text-center">
+                    <th>STT</th>
+                    <th>Tên chỉ định</th>
+                    <th>Thanh toán</th>
+                    <th>Số lượng</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@(stt++)</td>
+                        <td style="color: blue; font-weight: bold">@item.TenDichVu</td>
+                        <td style="color: blue; font-weight: bold">
+                            @if (item.ThanhToan == 0)
+                            {
+                                <span style="color: red">Không thanh toán</span>
+                            }
+                            else
+                            {
+                                <span>Đã thanh toán</span>
+                            }
+
+                        </td>
+                        <td style="color: blue; font-weight: bold">@item.SoLuong</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@{
+    <script>       
+
+        $(document).ready(function () {
+            $('#tblDanhSachKetQuaReport').DataTable();
+
+           
+        });
+    </script>
+}
